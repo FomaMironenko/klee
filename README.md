@@ -4,3 +4,6 @@
 - LLVM
   - [repository](https://github.com/llvm/llvm-project/tree/master/llvm) 
   - [webpage](https://llvm.org/doxygen/index.html)
+    - [CFG](https://llvm.org/doxygen/IR_2CFG_8h.html)
+    - [BasicBlock](https://llvm.org/doxygen/BasicBlock_8h.html)
+    - [Function](https://llvm.org/doxygen/Function_8h.html)
