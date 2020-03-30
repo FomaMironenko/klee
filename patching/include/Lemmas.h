@@ -7,9 +7,11 @@
 #include <map>
 #include <set>
 
+using namespace klee;
 
 namespace yummy
 {
+
 
     class Lemma
     {
@@ -22,6 +24,8 @@ namespace yummy
 
     };
 
+
 } //END yummy
+
 
 #endif //LEMMAS
