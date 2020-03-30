@@ -4,4 +4,4 @@ project(patching)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(patching main.cpp)
-include_directories("include/")
+include_directories("include/" "../klee/include/")
