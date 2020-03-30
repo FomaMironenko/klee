@@ -1,0 +1,11 @@
+/opt/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/fomius2000/states_and_lemmas/patching
+CMake Error at CMakeLists.txt:7 (add_subdirectory):
+  The source directory
+
+    /home/fomius2000/states_and_lemmas/patching/include
+
+  does not contain a CMakeLists.txt file.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/fomius2000/states_and_lemmas/patching/cmake-build-debug/CMakeFiles/CMakeOutput.log".
