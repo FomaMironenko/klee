@@ -1,3 +1,0 @@
-/home/fomius2000/states_and_lemmas/patching/CMakeFiles/rebuild_cache.dir
-/home/fomius2000/states_and_lemmas/patching/CMakeFiles/patching.dir
-/home/fomius2000/states_and_lemmas/patching/CMakeFiles/edit_cache.dir
