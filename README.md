@@ -1,5 +1,11 @@
+# Description
+
+See our code at [/YummyPatches](https://gitlab.com/yummy-research-team/states_and_lemmas/-/tree/master/YummyPatches) directory
+
+## Refs
+
 - KLEE
-  - [repository](https://github.com/klee/klee)
+  - [initial repository](https://github.com/klee/klee)
   - [webpage](http://people.cs.vt.edu/~usman/kleeDocs/html/index.html)
     - [ExecutionState](http://people.cs.vt.edu/~usman/kleeDocs/html/ExecutionState_8h.html)
     - [Expr](http://people.cs.vt.edu/~usman/kleeDocs/html/Expr_8h.html)
