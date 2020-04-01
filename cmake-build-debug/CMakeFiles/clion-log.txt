@@ -1,0 +1,90 @@
+/opt/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DENABLE_SYSTEM_TESTS=OFF -G "CodeBlocks - Unix Makefiles" /home/fomius2000/states_and_lemmas
+CMake Deprecation Warning at CMakeLists.txt:25 (cmake_policy):
+  The OLD behavior for policy CMP0054 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- KLEE version 2.2-pre
+-- CMake generator: Unix Makefiles
+-- Build type: Debug
+-- KLEE assertions enabled
+-- LLVM_CONFIG_BINARY: /usr/bin/llvm-config
+-- LLVM_PACKAGE_VERSION: "6.0.0"
+-- LLVM_VERSION_MAJOR: "6"
+-- LLVM_VERSION_MINOR: "0"
+-- LLVM_VERSION_PATCH: "0"
+-- LLVM_DEFINITIONS: "-D_GNU_SOURCE;-D__STDC_CONSTANT_MACROS;-D__STDC_FORMAT_MACROS;-D__STDC_LIMIT_MACROS"
+-- LLVM_ENABLE_ASSERTIONS: "OFF"
+-- LLVM_ENABLE_EH: "OFF"
+-- LLVM_ENABLE_RTTI: "ON"
+-- LLVM_INCLUDE_DIRS: "/usr/include"
+-- LLVM_LIBRARY_DIRS: "/usr/lib"
+-- LLVM_TOOLS_BINARY_DIR: "/usr/bin"
+-- LLVM_ENABLE_VISIBILITY_INLINES_HIDDEN: "ON"
+-- TARGET_TRIPLE: "x86_64-unknown-linux-gnu"
+CMake Warning at CMakeLists.txt:257 (message):
+  LLVM was built without assertions but KLEE will be built with them.
+
+  This might lead to unexpected behaviour.
+
+
+-- Looking for bitcode compilers
+-- Found /usr/bin/clang-6.0
+-- Found /usr/bin/clang++
+-- Testing bitcode compiler /usr/bin/clang-6.0
+-- Compile success
+-- Checking compatibility with LLVM 6.0.0
+-- "/usr/bin/clang-6.0" is compatible
+-- Testing bitcode compiler /usr/bin/clang++
+-- Compile success
+-- Checking compatibility with LLVM 6.0.0
+-- "/usr/bin/clang++" is compatible
+-- LLVMCC: /usr/bin/clang-6.0
+-- LLVMCXX: /usr/bin/clang++
+-- C++ compiler supports -Wall
+-- C++ compiler supports -Wextra
+-- C++ compiler supports -Wno-unused-parameter
+-- C compiler supports -Wall
+-- C compiler supports -Wextra
+-- C compiler supports -Wno-unused-parameter
+-- Not treating compiler warnings as errors
+-- Could NOT find STP (missing: STP_DIR)
+-- STP solver support disabled
+-- Found Z3 libraries: "/usr/lib/libz3.so"
+-- Found Z3 include path: "/usr/include"
+-- Z3 solver support enabled
+-- Found Z3
+-- Z3_get_error_msg requires context
+-- metaSMT solver support disabled
+-- C++ compiler supports -fno-exceptions
+-- Zlib support enabled
+-- TCMalloc support enabled
+-- C++ compiler supports -fno-builtin-malloc
+-- C++ compiler supports -fno-builtin-calloc
+-- C++ compiler supports -fno-builtin-realloc
+-- C++ compiler supports -fno-builtin-free
+-- SELinux support disabled
+-- Workaround for LLVM PR39177 (affecting LLVM 3.9 - 7.0.0) enabled
+-- KLEE_RUNTIME_BUILD_TYPE: Debug+Asserts
+-- POSIX runtime disabled
+-- klee-uclibc support disabled
+-- libc++ support disabled
+-- CMAKE_CXX_FLAGS:  -Wall -Wextra -Wno-unused-parameter
+-- KLEE_GIT_SHA1HASH: 5686660ac0343a2fcb51facca096134a6c6904cd
+-- KLEE_COMPONENT_EXTRA_INCLUDE_DIRS: '/usr/include;/usr/include;/usr/include;/usr/include'
+-- KLEE_COMPONENT_CXX_DEFINES: '-D_GNU_SOURCE;-D__STDC_CONSTANT_MACROS;-D__STDC_FORMAT_MACROS;-D__STDC_LIMIT_MACROS'
+-- KLEE_COMPONENT_CXX_FLAGS: '-fvisibility-inlines-hidden;-fno-exceptions;-fno-builtin-malloc;-fno-builtin-calloc;-fno-builtin-realloc;-fno-builtin-free'
+-- KLEE_COMPONENT_EXTRA_LIBRARIES: '/usr/lib/libz.so;/usr/lib/libtcmalloc.so'
+-- KLEE_SOLVER_LIBRARIES: '/usr/lib/libz3.so'
+-- Testing is disabled
+-- Unit tests disabled
+-- System tests disabled
+-- Doxygen found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fomius2000/states_and_lemmas/cmake-build-debug

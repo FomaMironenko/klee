@@ -1,34 +1,87 @@
 #ifndef STATES
 #define STATES
 
-#include "Lemmas.h"
-
+// stl
 #include <vector>
+#include <set>
+#include <map>
+// klee
+#include "klee/util/Ref.h"
+// yummy
+#include "Guards.h"
 
 
-using Children = vector<Vertex*>;
 
 namespace yummy
 {
+    class Level;
     class Vertex;
     class Edge;
-    class Action;
+    class EdgeAction;
+    class Store; // ??
 
-    // BasicBlock?
+    using Children      = std::vector < ref<Vertex> >;
+
+    using SigmTy        = std::set < ref<Lemma> >;
+    using XiTy          = std::set < std::pair< ref<Guard>, ref<Store> >>;
+    using QueryTy       = std::set < ref<ProofQuery> >;
+
+    using VerStateTy    = std::map < int, ref<Level> >;
+}
+
+namespace yummy
+{
+
+    // represents   rho + sigma + proof of obligation
+    // for a particular level (b)
+    class Level
+    {
+        Level() = default;
+
+    public:
+        class ReferenceCounter _refCount; // for klee/util/Ref.h
+    private:
+        SigmTy  sigma;
+        XiTy    xi;
+        QueryTy Q;
+    };
+
+
     class Vertex
     {
+    public:
+        Vertex(bool startVer = false);
 
+        // true if there exists such level
+        bool check_level(int);
+        ref<Level> get_level(int);
 
-        Vertex*  parent;
+    public:
+        const bool IsStartVertex;
+        class ReferenceCounter _refCount;   // for klee/util/Ref.h
+
+        ref<Vertex>  parent;
         Children children;
 
-        Lemma*    lemma;
-        ProofObl* query;
+        VerStateTy levels;
+    };
+
+
+    class EdgeAction
+    {
+    public:
+        EdgeAction();
+
+    public:
+        class ReferenceCounter _refCount; // for klee/util/Ref.h
+
+        //inside information
     };
 
 
     class Edge
     {
+    protected:
         Edge(Vertex* start, Vertex* end): start(start), end(end)
         {   }
 
@@ -36,14 +89,11 @@ namespace yummy
         void LemmaPropagation();
         void StepForward();
 
-        Vertex *start, *end;
-        Action action;
-    };
+    public:
+        class ReferenceCounter _refCount; // for klee/util/Ref.h
 
-
-    class Action
-    {
-        //inside information
+        ref<Vertex> start, end;
+        EdgeAction action;
     };
 
 

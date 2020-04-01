@@ -745,6 +745,8 @@ configure_file(${CMAKE_SOURCE_DIR}/include/klee/Config/CompileTimeInfo.h.cmin
 ################################################################################
 include_directories("${CMAKE_BINARY_DIR}/include")
 include_directories("${CMAKE_SOURCE_DIR}/include")
+include_directories("${CMAKE_SOURCE_DIR}/YummyPatches/include")
+include_directories("${CMAKE_SOURCE_DIR}/YummyPatches/lib")
 
 ################################################################################
 # Set default location for targets in the build directory
@@ -811,6 +813,7 @@ if (ENABLE_UNIT_TESTS OR ENABLE_SYSTEM_TESTS)
     "Lit arguments"
   )
 
+# ATTENTIN changed here
   if ((NOT LIT_TOOL) OR (NOT EXISTS "${LIT_TOOL}"))
     message(FATAL_ERROR "The lit tool is required for testing."
       " CMake tried to find lit with the following names \"${LIT_TOOL_NAMES}\""
@@ -860,4 +863,3 @@ endif()
 ################################################################################
 # Miscellaneous install
 ################################################################################
-install(FILES include/klee/klee.h DESTINATION include/klee)

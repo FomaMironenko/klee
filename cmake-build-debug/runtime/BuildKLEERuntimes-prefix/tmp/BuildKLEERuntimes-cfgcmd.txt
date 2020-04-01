@@ -1,0 +1,1 @@
+cmd='/opt/clion/bin/cmake/linux/bin/cmake;-E;echo;'

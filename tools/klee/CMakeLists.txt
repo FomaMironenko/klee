@@ -8,7 +8,7 @@
 #===------------------------------------------------------------------------===#
 add_executable(klee
   main.cpp
-)
+        ../../YummyPatches/lib/Guards.cpp ../../YummyPatches/lib/States.cpp)
 
 set(KLEE_LIBS
   kleeCore

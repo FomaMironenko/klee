@@ -130,6 +130,7 @@ add_subdirectory(Concrete)
 # This will likely break if using a multi-configuration generator.
 if (POLICY CMP0026)
   # HACK: Allow reading `LOCATION` property.
+  # ATTENTION: cgenged here by Yummy
   cmake_policy(SET CMP0026 OLD)
 endif()
 get_property(LIB_KLEE_RUN_TEST_PATH
