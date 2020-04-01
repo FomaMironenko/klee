@@ -52,7 +52,7 @@ namespace yummy
     protected:
 
     public:
-        class ReferenceCounter _refCount; // for klee/util/Ref.h
+        class ReferenceCounter _refCount;   // for klee/util/Ref.h
     };
 
 
@@ -61,8 +61,8 @@ namespace yummy
     {
 
     public:
-        unsigned level; //b
-        class ReferenceCounter _refCount; // for klee/util/Ref.h
+        unsigned level;                     //b
+        class ReferenceCounter _refCount;   // for klee/util/Ref.h
     protected:
         Guard property;
     };

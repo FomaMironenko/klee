@@ -25,7 +25,22 @@ bool Vertex::check_level(int b)
 ref<Level> Vertex::get_level(int b)
 {
     auto it = levels.find(b);
-    return ( it != levels.end() ) ? it->second : nullptr;
+    if(it != levels.end())
+    {
+        return it->second;
+    }
+    return levels[b] = Level::defaultLevel();
+}
+
+ref<Vertex> Vertex::access_child(ref<Edge> & edge)
+{
+    assert(edge->start.get() == this && "Wrong call");
+    return edge->end;
+}
+ref<Vertex> Vertex::access_parent(ref<Edge> & edge)
+{
+    assert(edge->end.get() == this && "Wrong call");
+    return edge->start;
 }
 
 //~~~~~~~~~Vertex~~~~~~~~~//
@@ -39,6 +54,16 @@ ref<Level> Vertex::get_level(int b)
 //---------EdgeAction---------//
 
 //~~~~~~~~~EdgeAction~~~~~~~~~//
+
+
+//---------ExecAction---------//
+
+//~~~~~~~~~ExecAction~~~~~~~~~//
+
+
+//---------NonExecAction---------//
+
+//~~~~~~~~~NonExecAction~~~~~~~~~//
 
 
 //---------Store---------//
