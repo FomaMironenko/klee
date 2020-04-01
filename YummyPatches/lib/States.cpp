@@ -25,7 +25,7 @@ bool Vertex::check_level(int b)
 ref<Level> Vertex::get_level(int b)
 {
     auto it = levels.find(b);
-    return ( it == levels.end() ) ? it->second : nullptr;
+    return ( it != levels.end() ) ? it->second : nullptr;
 }
 
 //~~~~~~~~~Vertex~~~~~~~~~//
