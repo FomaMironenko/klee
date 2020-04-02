@@ -22,12 +22,39 @@ namespace yummy
     class NonExecAction;
     class Store; // ??
 
+    template <typename Obj>
+    struct RefComparer
+    {
+        bool operator() (const ref<Obj> & lhs, const ref<Obj> & rhs) const
+        {
+            // silly compare
+            return uint64_t(lhs.get()) < uint64_t(rhs.get());
+        }
+    };
+
+    template <typename Obj1, typename Obj2>
+    struct PaiRefComparer
+    {
+        using PairObj = std::pair< ref<Obj1>, ref<Obj2> >;
+        bool operator() (const PairObj & lhs, const PairObj & rhs) const
+        {
+            // silly lexicographical compare
+            return  uint64_t (lhs.first.get()) <  uint64_t(rhs.first.get()) ||
+                   (uint64_t (lhs.first.get()) == uint64_t(rhs.first.get()) &&
+                           uint64_t(lhs.second.get()) < uint64_t(rhs.second.get()));
+        }
+    };
+
+    using RhoPair       = std::pair< ref<Guard>, ref<Store> >;
+
     using Neighbours    = std::vector < ref<Edge> >;
 
-    using SigmTy        = std::set < ref<Lemma> >;
-    using XiTy          = std::set < std::pair< ref<Guard>, ref<Store> >>;
-    using QueryTy       = std::set < ref<ProofQuery> >;
-
+    using SigmTy        = std::set < ref<Lemma>,
+                                     RefComparer<Lemma> >;
+    using RhoTy         = std::set < RhoPair,
+                                     PaiRefComparer<Guard, Store> >;
+    using QueryTy       = std::set < ref<ProofQuery>,
+                                     RefComparer<ProofQuery> >;
     using VerStateTy    = std::map < int, ref<Level> >;
 }
 
@@ -42,12 +69,14 @@ namespace yummy
         Level() = default;
         // returns Level with default values of sigma, xi
         static ref<Level> defaultLevel();
+    private:
+        static RhoPair defaultRho();
 
     public:
         class ReferenceCounter _refCount; // for klee/util/Ref.h
     private:
         SigmTy  sigma;
-        XiTy    xi;
+        RhoTy   rho;
         QueryTy Q;
     };
 
@@ -104,10 +133,10 @@ namespace yummy
         EdgeAction() = default;
         ref<Vertex> get_exit_node();
 
-    protected:
+    public:
         class ReferenceCounter _refCount;   // for klee/util/Ref.h
         enum {Call, NotCall} actTy;
-
+    private:
         ref<Guard> guard;
         ref<Edge>  edge;                    // also accesses exitNodeForCall
 

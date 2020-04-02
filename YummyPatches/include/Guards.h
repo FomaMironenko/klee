@@ -14,9 +14,9 @@ using namespace klee;
 namespace yummy
 {
     class Guard;
-    class SMTReult;
     class Lemma;
     class ProofQuery;
+    class SMTReult;
 }
 
 
@@ -25,15 +25,45 @@ namespace yummy
 
     class Guard
     {
+        friend class Level;
     public:
-        Guard() = default;
-        // true if appended
+        Guard();
         void append(ref<Expr> &);
+        static ref<Guard> defaultGuard();
 
     public:
         class ReferenceCounter _refCount; // for klee/util/Ref.h
     private:
         ConstraintManager constraints;
+    };
+
+
+    class Lemma
+    {
+        friend class Level;
+    public:
+        // sets the default value
+        Lemma();
+        static ref<Lemma> defaultLemma();
+
+    public:
+        class ReferenceCounter _refCount;   // for klee/util/Ref.h
+    private:
+        Guard property;
+    };
+
+
+    // Proof Obligation
+    class ProofQuery
+    {
+        friend class Level;
+    public:
+
+    public:
+        unsigned level;                     //b
+        class ReferenceCounter _refCount;   // for klee/util/Ref.h
+    private:
+        Guard property;
     };
 
 
@@ -44,27 +74,6 @@ namespace yummy
         class ReferenceCounter _refCount; // for klee/util/Ref.h
     private:
 
-    };
-
-
-    class Lemma
-    {
-    protected:
-
-    public:
-        class ReferenceCounter _refCount;   // for klee/util/Ref.h
-    };
-
-
-    // Proof Obligation
-    class ProofQuery
-    {
-
-    public:
-        unsigned level;                     //b
-        class ReferenceCounter _refCount;   // for klee/util/Ref.h
-    protected:
-        Guard property;
     };
 
 

@@ -2,6 +2,8 @@
 // Created by fomius2000 on 31.03.20.
 //
 
+//stl
+#include<utility>
 //klee
 #include "klee/util/Ref.h"
 // yummy
@@ -12,6 +14,13 @@ using namespace yummy;
 
 
 //---------Level---------//
+
+ref<Level> Level::defaultLevel()
+{
+    ref<Level> retVal(new Level);
+    sigma =
+    return retVal;
+}
 
 //~~~~~~~~~Level~~~~~~~~~//
 
