@@ -104,7 +104,7 @@ private:
   }
 
   bool hasSimpleKids(const Expr *ep) {
-      for (unsigned i=0; i<ep->getNumKids(); i++)
+      for (unsigned i=0; i < ep->getNumKids(); i++)
         if (!isSimple(ep->getKid(i)))
           return false;
       return true;

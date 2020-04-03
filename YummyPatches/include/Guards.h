@@ -33,8 +33,8 @@ namespace yummy
 
     public:
         class ReferenceCounter _refCount; // for klee/util/Ref.h
-    private:
-        ConstraintManager constraints;
+    //private:
+    //    ConstraintManager constraints;
     };
 
 

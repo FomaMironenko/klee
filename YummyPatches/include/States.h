@@ -9,6 +9,7 @@
 #include "klee/util/Ref.h"
 // yummy
 #include "Guards.h"
+#include "klee/Expr/Constraints.h"
 
 
 
@@ -63,6 +64,13 @@ namespace yummy
 
     // represents   rho + sigma + proof of obligation
     // for a particular level (b)
+
+    class Store
+    {
+    public:
+        class ReferenceCounter _refCount; // for klee/util/Ref.h
+    };
+
     class Level
     {
     public:

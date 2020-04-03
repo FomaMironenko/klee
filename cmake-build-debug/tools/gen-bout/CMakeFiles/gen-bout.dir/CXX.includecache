@@ -27,6 +27,8 @@ klee/util/Ref.h
 ../YummyPatches/include/klee/util/Ref.h
 Guards.h
 ../YummyPatches/include/Guards.h
+klee/Expr/Constraints.h
+../YummyPatches/include/klee/Expr/Constraints.h
 
 ../include/klee/Config/Version.h
 klee/Config/config.h
@@ -77,6 +79,16 @@ cassert
 -
 iosfwd
 -
+
+/home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.cpp
+klee/util/Ref.h
+/home/fomius2000/states_and_lemmas/YummyPatches/lib/klee/util/Ref.h
+klee/Expr/Expr.h
+/home/fomius2000/states_and_lemmas/YummyPatches/lib/klee/Expr/Expr.h
+klee/Expr/Constraints.h
+/home/fomius2000/states_and_lemmas/YummyPatches/lib/klee/Expr/Constraints.h
+Guards.h
+/home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.h
 
 /home/fomius2000/states_and_lemmas/YummyPatches/lib/States.cpp
 utility

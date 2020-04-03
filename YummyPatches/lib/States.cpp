@@ -18,7 +18,6 @@ using namespace yummy;
 ref<Level> Level::defaultLevel()
 {
     ref<Level> retVal(new Level);
-    sigma =
     return retVal;
 }
 

@@ -19,10 +19,10 @@ Guard::Guard()
 {
     //constraints{};
 }
-void Guard::append(ref<Expr> & expr)
-{
-    constraints.addConstraint(expr);
-}
+//void Guard::append(ref<Expr> & expr)
+//{
+//    constraints.addConstraint(expr);
+//}
 
 //~~~~~~~~~Guard~~~~~~~~~//
 
