@@ -61,6 +61,7 @@
 #include <iomanip>
 #include <iterator>
 #include <sstream>
+#include <iostream>
 
 
 using namespace llvm;
@@ -1133,6 +1134,10 @@ linkWithUclibc(StringRef libDir,
 #endif
 
 int main(int argc, char **argv, char **envp) {
+  std::cout << "hi";
+  std::ofstream outlog("~/states_and_lemmas/examples/check_constr_manager/out_log.txt", std::fstream::out);
+  outlog << "hi";
+
   atexit(llvm_shutdown);  // Call llvm_shutdown() on exit.
 
   KCommandLine::HideOptions(llvm::cl::GeneralCategory);
