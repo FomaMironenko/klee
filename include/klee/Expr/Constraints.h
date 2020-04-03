@@ -58,6 +58,10 @@ public:
     return constraints != other.constraints;
   }
 
+  //yummy
+  ~ConstraintManager();
+  //
+
 private:
   std::vector<ref<Expr>> constraints;
 

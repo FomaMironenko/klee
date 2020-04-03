@@ -18,6 +18,8 @@
 #include "llvm/Support/CommandLine.h"
 
 #include <map>
+#include <string>
+#include <iostream>
 
 using namespace klee;
 
@@ -167,4 +169,14 @@ void ConstraintManager::addConstraintInternal(ref<Expr> e) {
 void ConstraintManager::addConstraint(ref<Expr> e) {
   e = simplifyExpr(e);
   addConstraintInternal(e);
+}
+
+// yummy
+ConstraintManager::~ConstraintManager()
+{
+    std::string out;
+    llvm::raw_string_ostream infoout(out);
+    ExprPPrinter::printConstraints(infoout, *this);
+    std::cout << out;
+    constraints.clear();
 }
