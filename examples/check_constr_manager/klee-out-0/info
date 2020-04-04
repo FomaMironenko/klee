@@ -1,0 +1,4 @@
+klee main.bc
+PID: 5853
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2020-04-04 06:19:27

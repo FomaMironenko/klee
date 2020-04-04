@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: false
+File: main.cpp
+Line: 26
+assembly.ll line: 88
+Stack: 
+	#000000088 in _Z3fooii (, ) at main.cpp:26
+	#100000189 in main () at main.cpp:51
