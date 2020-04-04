@@ -29,7 +29,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "include"
   "../include"
   "../YummyPatches/include"
-  "../YummyPatches/lib"
   )
 
 # Targets to which this target links.

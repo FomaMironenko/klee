@@ -21,7 +21,7 @@ Guard::Guard()
 }
 //void Guard::append(ref<Expr> & expr)
 //{
-//    constraints.addConstraint(expr);
+//    constr.addConstraint(expr);
 //}
 
 //~~~~~~~~~Guard~~~~~~~~~//

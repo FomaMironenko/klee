@@ -7,11 +7,11 @@ C_FLAGS =  -Wall -Wextra -Wno-unused-parameter -O0 -g -fPIC
 
 C_DEFINES = -DkleeRuntest_EXPORTS
 
-C_INCLUDES = -I/home/fomius2000/states_and_lemmas/cmake-build-debug/include -I/home/fomius2000/states_and_lemmas/include -I/home/fomius2000/states_and_lemmas/YummyPatches/include -I/home/fomius2000/states_and_lemmas/YummyPatches/lib 
+C_INCLUDES = -I/home/fomius2000/states_and_lemmas/cmake-build-debug/include -I/home/fomius2000/states_and_lemmas/include -I/home/fomius2000/states_and_lemmas/YummyPatches/include 
 
 CXX_FLAGS =  -Wall -Wextra -Wno-unused-parameter -O0 -g -fPIC   -std=gnu++14
 
 CXX_DEFINES = -DkleeRuntest_EXPORTS
 
-CXX_INCLUDES = -I/home/fomius2000/states_and_lemmas/cmake-build-debug/include -I/home/fomius2000/states_and_lemmas/include -I/home/fomius2000/states_and_lemmas/YummyPatches/include -I/home/fomius2000/states_and_lemmas/YummyPatches/lib 
+CXX_INCLUDES = -I/home/fomius2000/states_and_lemmas/cmake-build-debug/include -I/home/fomius2000/states_and_lemmas/include -I/home/fomius2000/states_and_lemmas/YummyPatches/include 
 

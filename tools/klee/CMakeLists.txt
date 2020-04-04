@@ -6,9 +6,9 @@
 # License. See LICENSE.TXT for details.
 #
 #===------------------------------------------------------------------------===#
-add_executable(klee
-  main.cpp
-        ../../YummyPatches/lib/Guards.cpp ../../YummyPatches/lib/States.cpp)
+add_executable(klee main.cpp)
+#  main.cpp
+#        ../../YummyPatches/lib/Guards.cpp ../../YummyPatches/lib/States.cpp)
 
 set(KLEE_LIBS
   kleeCore

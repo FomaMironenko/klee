@@ -19,7 +19,8 @@
 
 #include <map>
 #include <string>
-#include <iostream>
+#include <fstream>
+#include <ctime>
 
 using namespace klee;
 
@@ -177,6 +178,10 @@ ConstraintManager::~ConstraintManager()
     std::string out;
     llvm::raw_string_ostream infoout(out);
     ExprPPrinter::printConstraints(infoout, *this);
-    std::cout << out;
+
+    std::ofstream out_log("out_log.txt", std::fstream::app);
+    std::time_t result = std::time(nullptr);
+    out_log << infoout.str() << "\n---------------------------------\n";
+    out_log.close();
     constraints.clear();
 }

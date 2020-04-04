@@ -101,7 +101,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -131,7 +130,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -161,7 +159,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -191,7 +188,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -221,7 +217,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -251,7 +246,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -281,7 +275,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -311,7 +304,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -341,7 +333,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -371,7 +362,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -401,7 +391,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -431,7 +420,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -477,7 +465,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -503,7 +490,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -533,7 +519,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -563,7 +548,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -593,7 +577,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -623,7 +606,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -653,7 +635,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -683,7 +664,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -713,7 +693,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -743,7 +722,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -773,7 +751,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -803,7 +780,6 @@
 					<Add directory="/home/fomius2000/states_and_lemmas/cmake-build-debug/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/include"/>
 					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/include"/>
-					<Add directory="/home/fomius2000/states_and_lemmas/YummyPatches/lib"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/../../../../include/c++/9.2.1/backward"/>
@@ -852,11 +828,9 @@
 		</Build>
 		<Unit filename="/home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.cpp">
 			<Option target="gen-bout"/>
-			<Option target="klee"/>
 		</Unit>
 		<Unit filename="/home/fomius2000/states_and_lemmas/YummyPatches/lib/States.cpp">
 			<Option target="gen-bout"/>
-			<Option target="klee"/>
 		</Unit>
 		<Unit filename="/home/fomius2000/states_and_lemmas/lib/Basic/KTest.cpp">
 			<Option target="kleeBasic"/>

@@ -6,5 +6,5 @@ C_FLAGS =  -Wall -Wextra -Wno-unused-parameter -O0 -g
 
 C_DEFINES = -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
 
-C_INCLUDES = -I/home/fomius2000/states_and_lemmas/cmake-build-debug/include -I/home/fomius2000/states_and_lemmas/include -I/home/fomius2000/states_and_lemmas/YummyPatches/include -I/home/fomius2000/states_and_lemmas/YummyPatches/lib 
+C_INCLUDES = -I/home/fomius2000/states_and_lemmas/cmake-build-debug/include -I/home/fomius2000/states_and_lemmas/include -I/home/fomius2000/states_and_lemmas/YummyPatches/include 
 

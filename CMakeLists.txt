@@ -746,7 +746,7 @@ configure_file(${CMAKE_SOURCE_DIR}/include/klee/Config/CompileTimeInfo.h.cmin
 include_directories("${CMAKE_BINARY_DIR}/include")
 include_directories("${CMAKE_SOURCE_DIR}/include")
 include_directories("${CMAKE_SOURCE_DIR}/YummyPatches/include")
-include_directories("${CMAKE_SOURCE_DIR}/YummyPatches/lib")
+link_directories("${CMAKE_SOURCE_DIR}/YummyPatches/lib")
 
 ################################################################################
 # Set default location for targets in the build directory

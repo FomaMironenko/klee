@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -Wextra -Wno-unused-parameter -O0 -g  -rdynamic CMakeFiles/gen-random-bout.dir/gen-random-bout.cpp.o  -o ../../bin/gen-random-bout ../../lib/libkleeBasic.a -lz -ltcmalloc /usr/lib/libLLVM-6.0.so 
+/usr/bin/c++   -Wall -Wextra -Wno-unused-parameter -O0 -g  -rdynamic CMakeFiles/gen-random-bout.dir/gen-random-bout.cpp.o  -o ../../bin/gen-random-bout  -L/home/fomius2000/states_and_lemmas/YummyPatches/lib -Wl,-rpath,/home/fomius2000/states_and_lemmas/YummyPatches/lib: ../../lib/libkleeBasic.a -lz -ltcmalloc /usr/lib/libLLVM-6.0.so 

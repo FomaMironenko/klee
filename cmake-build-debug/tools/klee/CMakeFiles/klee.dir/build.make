@@ -70,44 +70,14 @@ tools/klee/CMakeFiles/klee.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/klee.dir/main.cpp.s"
 	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/klee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fomius2000/states_and_lemmas/tools/klee/main.cpp -o CMakeFiles/klee.dir/main.cpp.s
 
-tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.o: tools/klee/CMakeFiles/klee.dir/flags.make
-tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.o: ../YummyPatches/lib/Guards.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fomius2000/states_and_lemmas/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.o"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/klee && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.o -c /home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.cpp
-
-tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.i"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/klee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.cpp > CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.i
-
-tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.s"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/klee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.cpp -o CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.s
-
-tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.o: tools/klee/CMakeFiles/klee.dir/flags.make
-tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.o: ../YummyPatches/lib/States.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fomius2000/states_and_lemmas/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.o"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/klee && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.o -c /home/fomius2000/states_and_lemmas/YummyPatches/lib/States.cpp
-
-tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.i"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/klee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fomius2000/states_and_lemmas/YummyPatches/lib/States.cpp > CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.i
-
-tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.s"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/klee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fomius2000/states_and_lemmas/YummyPatches/lib/States.cpp -o CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.s
-
 # Object files for target klee
 klee_OBJECTS = \
-"CMakeFiles/klee.dir/main.cpp.o" \
-"CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.o" \
-"CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.o"
+"CMakeFiles/klee.dir/main.cpp.o"
 
 # External object files for target klee
 klee_EXTERNAL_OBJECTS =
 
 bin/klee: tools/klee/CMakeFiles/klee.dir/main.cpp.o
-bin/klee: tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/Guards.cpp.o
-bin/klee: tools/klee/CMakeFiles/klee.dir/__/__/YummyPatches/lib/States.cpp.o
 bin/klee: tools/klee/CMakeFiles/klee.dir/build.make
 bin/klee: lib/libkleeCore.a
 bin/klee: /usr/lib/libsqlite3.so
@@ -121,7 +91,7 @@ bin/klee: /usr/lib/libz.so
 bin/klee: /usr/lib/libtcmalloc.so
 bin/klee: /usr/lib/libLLVM-6.0.so
 bin/klee: tools/klee/CMakeFiles/klee.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fomius2000/states_and_lemmas/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../../bin/klee"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fomius2000/states_and_lemmas/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/klee"
 	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/klee && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/klee.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
