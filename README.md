@@ -16,3 +16,4 @@ See our code at [/YummyPatches](https://gitlab.com/yummy-research-team/states_an
     - [CFG](https://llvm.org/doxygen/IR_2CFG_8h.html)
     - [BasicBlock](https://llvm.org/doxygen/BasicBlock_8h.html)
     - [Function](https://llvm.org/doxygen/Function_8h.html)
+  - [manual](http://www.llvm.org/docs/ProgrammersManual.html#set-like-containers-std-set-smallset-setvector-etc)
