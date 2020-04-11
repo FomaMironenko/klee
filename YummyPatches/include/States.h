@@ -7,86 +7,26 @@
 #include <map>
 // klee
 #include "klee/util/Ref.h"
+#include "klee/Expr/Constraints.h"
 // yummy
 #include "Guards.h"
-#include "klee/Expr/Constraints.h"
-
 
 
 namespace yummy
 {
-    class Level;
     class Vertex;
     class Edge;
     class EdgeAction;
     class ExecAction;
     class NonExecAction;
-    class Store; // ??
-
-    template <typename Obj>
-    struct RefComparer
-    {
-        bool operator() (const ref<Obj> & lhs, const ref<Obj> & rhs) const
-        {
-            // silly compare
-            return uint64_t(lhs.get()) < uint64_t(rhs.get());
-        }
-    };
-
-    template <typename Obj1, typename Obj2>
-    struct PaiRefComparer
-    {
-        using PairObj = std::pair< ref<Obj1>, ref<Obj2> >;
-        bool operator() (const PairObj & lhs, const PairObj & rhs) const
-        {
-            // silly lexicographical compare
-            return  uint64_t (lhs.first.get()) <  uint64_t(rhs.first.get()) ||
-                   (uint64_t (lhs.first.get()) == uint64_t(rhs.first.get()) &&
-                           uint64_t(lhs.second.get()) < uint64_t(rhs.second.get()));
-        }
-    };
-
-    using RhoPair       = std::pair< ref<Guard>, ref<Store> >;
 
     using Neighbours    = std::vector < ref<Edge> >;
-
-    using SigmTy        = std::set < ref<Lemma>,
-                                     RefComparer<Lemma> >;
-    using RhoTy         = std::set < RhoPair,
-                                     PaiRefComparer<Guard, Store> >;
-    using QueryTy       = std::set < ref<ProofQuery>,
-                                     RefComparer<ProofQuery> >;
-    using VerStateTy    = std::map < int, ref<Level> >;
 }
 
 namespace yummy
 {
-
     // represents   rho + sigma + proof of obligation
     // for a particular level (b)
-
-    class Store
-    {
-    public:
-        class ReferenceCounter _refCount; // for klee/util/Ref.h
-    };
-
-    class Level
-    {
-    public:
-        Level() = default;
-        // returns Level with default values of sigma, xi
-        static ref<Level> defaultLevel();
-    private:
-        static RhoPair defaultRho();
-
-    public:
-        class ReferenceCounter _refCount; // for klee/util/Ref.h
-    private:
-        SigmTy  sigma;
-        RhoTy   rho;
-        QueryTy Q;
-    };
 
 
     class Vertex
@@ -107,6 +47,7 @@ namespace yummy
     public:
         const bool isStartVertex;
         class ReferenceCounter _refCount;   // for klee/util/Ref.h
+        ~Vertex() = default;
     private:
         Neighbours parents;
         Neighbours children;
@@ -145,7 +86,7 @@ namespace yummy
         class ReferenceCounter _refCount;   // for klee/util/Ref.h
         enum {Call, NotCall} actTy;
     private:
-        ref<Guard> guard;
+        ref<ConstraintManager> guard;
         ref<Edge>  edge;                    // also accesses exitNodeForCall
 
     };
@@ -166,5 +107,6 @@ namespace yummy
     };
 
 } //END yummy
+
 
 #endif // STATES

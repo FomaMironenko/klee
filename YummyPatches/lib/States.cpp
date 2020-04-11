@@ -9,19 +9,9 @@
 // yummy
 #include "States.h"
 
+
 using namespace klee;
 using namespace yummy;
-
-
-//---------Level---------//
-
-ref<Level> Level::defaultLevel()
-{
-    ref<Level> retVal(new Level);
-    return retVal;
-}
-
-//~~~~~~~~~Level~~~~~~~~~//
 
 
 //---------Vertex---------//
@@ -37,7 +27,7 @@ ref<Level> Vertex::get_level(int b)
     {
         return it->second;
     }
-    return levels[b] = Level::defaultLevel();
+    return levels[b] = Level::defaultLevel(b);
 }
 
 ref<Vertex> Vertex::access_child(ref<Edge> & edge)
@@ -73,8 +63,4 @@ ref<Vertex> Vertex::access_parent(ref<Edge> & edge)
 
 //~~~~~~~~~NonExecAction~~~~~~~~~//
 
-
-//---------Store---------//
-
-//~~~~~~~~~Store~~~~~~~~~//
 
