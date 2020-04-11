@@ -194,6 +194,7 @@ lib/Core/CMakeFiles/kleeCore.dir/ImpliedValue.cpp.o: ../lib/Core/ImpliedValue.cp
 lib/Core/CMakeFiles/kleeCore.dir/ImpliedValue.cpp.o: ../lib/Core/ImpliedValue.h
 lib/Core/CMakeFiles/kleeCore.dir/ImpliedValue.cpp.o: include/klee/Config/config.h
 
+lib/Core/CMakeFiles/kleeCore.dir/Memory.cpp.o: ../YummyPatches/include/ConfigConstants.h
 lib/Core/CMakeFiles/kleeCore.dir/Memory.cpp.o: ../include/klee/Config/Version.h
 lib/Core/CMakeFiles/kleeCore.dir/Memory.cpp.o: ../include/klee/Expr/ArrayCache.h
 lib/Core/CMakeFiles/kleeCore.dir/Memory.cpp.o: ../include/klee/Expr/ArrayExprHash.h

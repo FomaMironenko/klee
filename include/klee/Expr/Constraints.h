@@ -11,6 +11,7 @@
 #define KLEE_CONSTRAINTS_H
 
 #include "klee/Expr/Expr.h"
+#include "klee/util/Ref.h"
 
 // FIXME: Currently we use ConstraintManager for two things: to pass
 // sets of constraints around, and to optimize constraints. We should
@@ -60,6 +61,9 @@ public:
 
   //yummy
   ~ConstraintManager();
+
+  class ReferenceCounter _refCount; // for klee/util/Ref.h
+  int compare(const ConstraintManager &);
   //
 
 private:

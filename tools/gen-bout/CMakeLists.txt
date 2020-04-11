@@ -7,8 +7,7 @@
 #
 #===------------------------------------------------------------------------===#
 add_executable(gen-bout
-  gen-bout.cpp
-        ../../YummyPatches/lib/Guards.cpp ../../YummyPatches/lib/States.cpp)
+  gen-bout.cpp)
 
 set(KLEE_LIBS kleeBasic)
 

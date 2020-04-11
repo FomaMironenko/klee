@@ -70,51 +70,21 @@ tools/gen-bout/CMakeFiles/gen-bout.dir/gen-bout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gen-bout.dir/gen-bout.cpp.s"
 	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/gen-bout && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fomius2000/states_and_lemmas/tools/gen-bout/gen-bout.cpp -o CMakeFiles/gen-bout.dir/gen-bout.cpp.s
 
-tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.o: tools/gen-bout/CMakeFiles/gen-bout.dir/flags.make
-tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.o: ../YummyPatches/lib/Guards.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fomius2000/states_and_lemmas/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.o"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/gen-bout && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.o -c /home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.cpp
-
-tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.i"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/gen-bout && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.cpp > CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.i
-
-tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.s"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/gen-bout && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.cpp -o CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.s
-
-tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.o: tools/gen-bout/CMakeFiles/gen-bout.dir/flags.make
-tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.o: ../YummyPatches/lib/States.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fomius2000/states_and_lemmas/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.o"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/gen-bout && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.o -c /home/fomius2000/states_and_lemmas/YummyPatches/lib/States.cpp
-
-tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.i"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/gen-bout && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fomius2000/states_and_lemmas/YummyPatches/lib/States.cpp > CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.i
-
-tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.s"
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/gen-bout && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fomius2000/states_and_lemmas/YummyPatches/lib/States.cpp -o CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.s
-
 # Object files for target gen-bout
 gen__bout_OBJECTS = \
-"CMakeFiles/gen-bout.dir/gen-bout.cpp.o" \
-"CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.o" \
-"CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.o"
+"CMakeFiles/gen-bout.dir/gen-bout.cpp.o"
 
 # External object files for target gen-bout
 gen__bout_EXTERNAL_OBJECTS =
 
 bin/gen-bout: tools/gen-bout/CMakeFiles/gen-bout.dir/gen-bout.cpp.o
-bin/gen-bout: tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.o
-bin/gen-bout: tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.o
 bin/gen-bout: tools/gen-bout/CMakeFiles/gen-bout.dir/build.make
 bin/gen-bout: lib/libkleeBasic.a
 bin/gen-bout: /usr/lib/libz.so
 bin/gen-bout: /usr/lib/libtcmalloc.so
 bin/gen-bout: /usr/lib/libLLVM-6.0.so
 bin/gen-bout: tools/gen-bout/CMakeFiles/gen-bout.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fomius2000/states_and_lemmas/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../../bin/gen-bout"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fomius2000/states_and_lemmas/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/gen-bout"
 	cd /home/fomius2000/states_and_lemmas/cmake-build-debug/tools/gen-bout && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gen-bout.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

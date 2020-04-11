@@ -827,10 +827,10 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/fomius2000/states_and_lemmas/YummyPatches/lib/Guards.cpp">
-			<Option target="gen-bout"/>
+			<Option target="klee"/>
 		</Unit>
 		<Unit filename="/home/fomius2000/states_and_lemmas/YummyPatches/lib/States.cpp">
-			<Option target="gen-bout"/>
+			<Option target="klee"/>
 		</Unit>
 		<Unit filename="/home/fomius2000/states_and_lemmas/lib/Basic/KTest.cpp">
 			<Option target="kleeBasic"/>

@@ -171,60 +171,6 @@ gen-bout/fast:
 	cd /home/fomius2000/states_and_lemmas/cmake-build-debug && $(MAKE) -f tools/gen-bout/CMakeFiles/gen-bout.dir/build.make tools/gen-bout/CMakeFiles/gen-bout.dir/build
 .PHONY : gen-bout/fast
 
-__/__/YummyPatches/lib/Guards.o: __/__/YummyPatches/lib/Guards.cpp.o
-
-.PHONY : __/__/YummyPatches/lib/Guards.o
-
-# target to build an object file
-__/__/YummyPatches/lib/Guards.cpp.o:
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug && $(MAKE) -f tools/gen-bout/CMakeFiles/gen-bout.dir/build.make tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.o
-.PHONY : __/__/YummyPatches/lib/Guards.cpp.o
-
-__/__/YummyPatches/lib/Guards.i: __/__/YummyPatches/lib/Guards.cpp.i
-
-.PHONY : __/__/YummyPatches/lib/Guards.i
-
-# target to preprocess a source file
-__/__/YummyPatches/lib/Guards.cpp.i:
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug && $(MAKE) -f tools/gen-bout/CMakeFiles/gen-bout.dir/build.make tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.i
-.PHONY : __/__/YummyPatches/lib/Guards.cpp.i
-
-__/__/YummyPatches/lib/Guards.s: __/__/YummyPatches/lib/Guards.cpp.s
-
-.PHONY : __/__/YummyPatches/lib/Guards.s
-
-# target to generate assembly for a file
-__/__/YummyPatches/lib/Guards.cpp.s:
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug && $(MAKE) -f tools/gen-bout/CMakeFiles/gen-bout.dir/build.make tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.s
-.PHONY : __/__/YummyPatches/lib/Guards.cpp.s
-
-__/__/YummyPatches/lib/States.o: __/__/YummyPatches/lib/States.cpp.o
-
-.PHONY : __/__/YummyPatches/lib/States.o
-
-# target to build an object file
-__/__/YummyPatches/lib/States.cpp.o:
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug && $(MAKE) -f tools/gen-bout/CMakeFiles/gen-bout.dir/build.make tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.o
-.PHONY : __/__/YummyPatches/lib/States.cpp.o
-
-__/__/YummyPatches/lib/States.i: __/__/YummyPatches/lib/States.cpp.i
-
-.PHONY : __/__/YummyPatches/lib/States.i
-
-# target to preprocess a source file
-__/__/YummyPatches/lib/States.cpp.i:
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug && $(MAKE) -f tools/gen-bout/CMakeFiles/gen-bout.dir/build.make tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.i
-.PHONY : __/__/YummyPatches/lib/States.cpp.i
-
-__/__/YummyPatches/lib/States.s: __/__/YummyPatches/lib/States.cpp.s
-
-.PHONY : __/__/YummyPatches/lib/States.s
-
-# target to generate assembly for a file
-__/__/YummyPatches/lib/States.cpp.s:
-	cd /home/fomius2000/states_and_lemmas/cmake-build-debug && $(MAKE) -f tools/gen-bout/CMakeFiles/gen-bout.dir/build.make tools/gen-bout/CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.s
-.PHONY : __/__/YummyPatches/lib/States.cpp.s
-
 gen-bout.o: gen-bout.cpp.o
 
 .PHONY : gen-bout.o
@@ -265,12 +211,6 @@ help:
 	@echo "... gen-bout"
 	@echo "... install/local"
 	@echo "... install"
-	@echo "... __/__/YummyPatches/lib/Guards.o"
-	@echo "... __/__/YummyPatches/lib/Guards.i"
-	@echo "... __/__/YummyPatches/lib/Guards.s"
-	@echo "... __/__/YummyPatches/lib/States.o"
-	@echo "... __/__/YummyPatches/lib/States.i"
-	@echo "... __/__/YummyPatches/lib/States.s"
 	@echo "... gen-bout.o"
 	@echo "... gen-bout.i"
 	@echo "... gen-bout.s"

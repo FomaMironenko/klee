@@ -302,6 +302,10 @@ struct Expr::CreateArg {
   bool isWidth() { return width != Expr::InvalidWidth; }
 };
 
+
+
+
+
 // Comparison operators
 
 inline bool operator==(const Expr &lhs, const Expr &rhs) {
@@ -328,6 +332,10 @@ inline bool operator>=(const Expr &lhs, const Expr &rhs) {
   return !(lhs < rhs);
 }
 
+
+
+
+
 // Printing operators
 
 inline llvm::raw_ostream &operator<<(llvm::raw_ostream &os, const Expr &e) {
@@ -349,12 +357,16 @@ inline std::stringstream &operator<<(std::stringstream &os, const Expr &e) {
 }
 
 inline std::stringstream &operator<<(std::stringstream &os, const Expr::Kind kind) {
-  std::string str;
-  llvm::raw_string_ostream TmpStr(str);
-  Expr::printKind(TmpStr, kind);
-  os << TmpStr.str();
-  return os;
+    std::string str;
+    llvm::raw_string_ostream TmpStr(str);
+    Expr::printKind(TmpStr, kind);
+    os << TmpStr.str();
+    return os;
 }
+
+
+
+
 
 // Utility classes
 

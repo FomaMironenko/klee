@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "../../bin/gen-bout"
   "../../bin/gen-bout.pdb"
-  "CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/Guards.cpp.o"
-  "CMakeFiles/gen-bout.dir/__/__/YummyPatches/lib/States.cpp.o"
   "CMakeFiles/gen-bout.dir/gen-bout.cpp.o"
 )
 

@@ -66,7 +66,10 @@ struct StackFrame {
 /// @brief ExecutionState representing a path under exploration
 class ExecutionState {
 public:
-  typedef std::vector<StackFrame> stack_ty;
+    typedef std::vector<StackFrame> stack_ty;
+    /// yummy
+    class ReferenceCounter _refCount;
+    ///
 
 private:
   // unsupported, use copy constructor
