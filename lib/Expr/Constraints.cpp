@@ -17,10 +17,14 @@
 #include "llvm/IR/Function.h"
 #include "llvm/Support/CommandLine.h"
 
+// yummy
+#include "ConfigConstants.h"
+
 #include <map>
 #include <string>
 #include <fstream>
 #include <ctime>
+#include <ConfigConstants.h>
 
 using namespace klee;
 
@@ -173,15 +177,45 @@ void ConstraintManager::addConstraint(ref<Expr> e) {
 }
 
 // yummy
+// lexicographically
+int ConstraintManager::compare(const ConstraintManager & rhs)
+{
+    int value = 0;
+    for(auto it1 = this->begin(), it2 = rhs.begin();
+        it1 != this->end() && it2 != rhs.end();
+        it1++, it2++)
+    {
+        value = it1->compare(*it2);
+        if(value != 0)
+        {
+            return value;
+        }
+    }
+
+    if(this->size() > rhs.size())
+    {
+        return 1;
+    }
+    if(this->size() == rhs.size())
+    {
+        return 0;
+    }
+    return -1;
+}
+
 ConstraintManager::~ConstraintManager()
 {
-    std::string out;
-    llvm::raw_string_ostream infoout(out);
-    ExprPPrinter::printConstraints(infoout, *this);
+    // ConfigConstants.h
+    if(yummy::PRINT_CONSTRAINTS)
+    {
+        std::string out;
+        llvm::raw_string_ostream infoout(out);
+        ExprPPrinter::printConstraints(infoout, *this);
 
-    std::ofstream out_log("out_log.txt", std::fstream::app);
-    std::time_t result = std::time(nullptr);
-    out_log << infoout.str() << "\n---------------------------------\n";
-    out_log.close();
+        std::ofstream out_log("out_log.txt", std::fstream::app);
+        std::time_t result = std::time(nullptr);
+        out_log << infoout.str() << "\n---------------------------------\n";
+        out_log.close();
+    }
     constraints.clear();
 }

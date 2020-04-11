@@ -25,8 +25,12 @@
 #include "llvm/Support/CommandLine.h"
 #include "llvm/Support/raw_ostream.h"
 
+// yummy
+#include "ConfigConstants.h"
+
 #include <cassert>
 #include <sstream>
+#include <fstream>
 
 using namespace llvm;
 using namespace klee;
@@ -44,8 +48,21 @@ namespace {
 int MemoryObject::counter = 0;
 
 MemoryObject::~MemoryObject() {
-  if (parent)
-    parent->markFreed(this);
+    // yummy
+    if(yummy::PRINT_VALUES &&  allocSite)
+    {
+        std::string S;
+        raw_string_ostream os(S);
+
+        allocSite->print(os);
+        std::ofstream out_log("value_log.txt", std::fstream::app);
+        out_log << os.str() << "\n---------------------------------\n";
+        out_log.close();
+    }
+    ////////
+
+    if (parent)
+        parent->markFreed(this);
 }
 
 void MemoryObject::getAllocInfo(std::string &result) const {
