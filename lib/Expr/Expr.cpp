@@ -21,6 +21,9 @@
 #include "llvm/Support/raw_ostream.h"
 
 #include <sstream>
+#include <fstream>
+
+#include "ConfigConstants.h"
 
 using namespace klee;
 using namespace llvm;
@@ -583,6 +586,7 @@ ref<Expr> ReadExpr::create(const UpdateList &ul, ref<Expr> index) {
 int ReadExpr::compareContents(const Expr &b) const { 
   return updates.compare(static_cast<const ReadExpr&>(b).updates);
 }
+
 
 ref<Expr> SelectExpr::create(ref<Expr> c, ref<Expr> t, ref<Expr> f) {
   Expr::Width kt = t->getWidth();

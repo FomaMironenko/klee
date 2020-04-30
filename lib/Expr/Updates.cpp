@@ -8,8 +8,13 @@
 //===----------------------------------------------------------------------===//
 
 #include "klee/Expr/Expr.h"
+#include "llvm/Support/raw_ostream.h"
+#include <sstream>
+#include <fstream>
 
 #include <cassert>
+#include "ConfigConstants.h"
+
 
 using namespace klee;
 
@@ -24,6 +29,17 @@ UpdateNode::UpdateNode(const ref<UpdateNode> &_next, const ref<Expr> &_index,
   assert(_value->getWidth() == Expr::Int8 && 
          "Update value should be 8-bit wide.");
   */
+  if(yummy::PRINT_UPD_NODE)
+  {
+      std::string S;
+      llvm::raw_string_ostream os(S);
+      os << "\nindex:  " << index;
+      os << "\nvalue:  " << value;
+      std::ofstream out_log("upd_node_log.txt", std::fstream::app);
+      out_log << os.str() << "\n---------------------------------\n";
+      out_log.close();
+  }
+
   computeHash();
   size = next.isNull() ? 1 : 1 + next->size;
 }
@@ -53,6 +69,17 @@ void UpdateList::extend(const ref<Expr> &index, const ref<Expr> &value) {
   if (root) {
     assert(root->getDomain() == index->getWidth());
     assert(root->getRange() == value->getWidth());
+  }
+
+  if(yummy::PRINT_UPD_LIST)
+  {
+      std::string S;
+      llvm::raw_string_ostream os(S);
+      os << "index:  " << index;
+      os << "\nvalue:  " << value;
+      std::ofstream out_log("upd_list_log.txt", std::fstream::app);
+      out_log << os.str() << "\n---------------------------------\n";
+      out_log.close();
   }
 
   head = new UpdateNode(head, index, value);

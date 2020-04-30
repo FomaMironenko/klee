@@ -561,6 +561,7 @@ public:
 public:
   UpdateList(const Array *_root, const ref<UpdateNode> &_head);
   UpdateList(const UpdateList &b) = default;
+  // yummy
   ~UpdateList() = default;
 
   UpdateList &operator=(const UpdateList &b) = default;
@@ -604,7 +605,10 @@ public:
   int compareContents(const Expr &b) const;
 
   virtual ref<Expr> rebuild(ref<Expr> kids[]) const {
-    return create(updates, kids[0]);
+      llvm::errs() << "old:  " << *this << "\n";
+      auto tmp = create(updates, kids[0]);
+      llvm::errs() << "new:  " << *tmp;
+      return tmp;
   }
 
   virtual unsigned computeHash();
@@ -614,6 +618,7 @@ private:
     updates(_updates), index(_index) { assert(updates.root); }
 
 public:
+    ~ReadExpr() {};
   static bool classof(const Expr *E) {
     return E->getKind() == Expr::Read;
   }

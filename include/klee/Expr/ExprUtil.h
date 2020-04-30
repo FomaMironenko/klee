@@ -27,6 +27,10 @@ namespace klee {
   void findReads(ref<Expr> e, 
                  bool visitUpdates,
                  std::vector< ref<ReadExpr> > &result);
+  // yummy
+  void MyfindReads(ref<Expr> e,
+                 bool visitUpdates,
+                 std::vector< ref<Expr>* > &result);
   
   /// Return a list of all unique symbolic objects referenced by the given
   /// expression.

@@ -18,6 +18,7 @@
 #include "llvm/Support/CommandLine.h"
 
 // yummy
+#include "klee/Expr/ExprUtil.h"
 #include "ConfigConstants.h"
 
 #include <map>
@@ -208,14 +209,65 @@ ConstraintManager::~ConstraintManager()
     // ConfigConstants.h
     if(yummy::PRINT_CONSTRAINTS)
     {
-        std::string out;
+        std::string S;
+        llvm::raw_string_ostream os(S);
+        std::ofstream out_log;
+        for(auto expr = constraints.begin(); expr < constraints.end(); expr++)
+        {
+            /// Check findReads
+
+            os.str().clear();
+            os << "EXPR:\n" << *expr << "\n\n";
+            std::vector< ref<ReadExpr> > result_upd, result_no_upd;
+            klee::findReads(*expr, true, result_upd);
+            klee::findReads(*expr, false, result_no_upd);
+
+            os << "Visiting updates:\n\n";
+            for(auto it = result_upd.begin(); it < result_upd.end(); it++)
+            {
+                os << *it << "\n\n";
+            }
+            os << "Not visiting updates:\n\n";
+            for(auto it = result_no_upd.begin(); it < result_no_upd.end(); it++)
+            {
+                //os << *it << "\n\n";
+                static_cast<ref<Expr>>(*it) = ConstantExpr::create(123, Expr::Int32);
+            }
+            os << "rebuilt?\n" << *expr << "\n\n";
+            os << "\n---------------------------------\n\n\n";
+
+            out_log.open("find_reads_log.txt", std::fstream::app);
+            out_log << os.str();
+            out_log.close();
+
+
+            /// check findSymbolicObjects
+
+            os.str().clear();
+            os << "EXPR:\n" << *expr << "\n\n";
+            std::vector<const Array*> result;
+            klee::findSymbolicObjects(*expr, result);
+
+            for(auto it = result.begin(); it < result.end(); it++)
+            {
+                os << int(it - result.begin()) << ": " << (*it)->name << "\t";
+            }
+            os << "\n\n";
+
+            out_log.open("find_symb_log.txt", std::fstream::app);
+            out_log << os.str();
+            out_log.close();
+        }
+
+
+        /*std::string out;
         llvm::raw_string_ostream infoout(out);
         ExprPPrinter::printConstraints(infoout, *this);
 
         std::ofstream out_log("out_log.txt", std::fstream::app);
         std::time_t result = std::time(nullptr);
         out_log << infoout.str() << "\n---------------------------------\n";
-        out_log.close();
+        out_log.close();*/
     }
     constraints.clear();
 }

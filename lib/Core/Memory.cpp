@@ -143,7 +143,24 @@ ObjectState::ObjectState(const ObjectState &os)
   memcpy(concreteStore, os.concreteStore, size*sizeof(*concreteStore));
 }
 
+// yummy
 ObjectState::~ObjectState() {
+    if(yummy::PRINT_STATE)
+    {
+        std::string S;
+        raw_string_ostream os(S);
+        os << object->name << " : \n";
+        for (unsigned i=0; i<size; i++)
+        {
+            ref<Expr> e = read8(i);
+            os << e << "\n";
+        }
+
+        std::ofstream out_log("state_log.txt", std::fstream::app);
+        out_log << os.str() << "\n---------------------------------\n";
+        out_log.close();
+    }
+
   delete concreteMask;
   delete flushMask;
   delete[] knownSymbolics;
