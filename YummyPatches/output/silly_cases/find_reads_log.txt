@@ -1,0 +1,684 @@
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+Visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+Not visiting updates:
+
+(Read w8 0 a)
+
+(Read w8 1 a)
+
+(Read w8 2 a)
+
+(Read w8 3 a)
+
+
+---------------------------------
+
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+Visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+Not visiting updates:
+
+(Read w8 0 b)
+
+(Read w8 1 b)
+
+(Read w8 2 b)
+
+(Read w8 3 b)
+
+
+---------------------------------
+
+

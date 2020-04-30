@@ -1,0 +1,156 @@
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+0: a	
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+0: b	
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+0: a	
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+0: b	
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+0: a	
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+0: b	
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+0: a	
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+0: b	
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+0: a	
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+0: b	
+
+EXPR:
+(Eq false
+     (Slt 0
+          (ReadLSB w32 0 a)))
+
+0: a	
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+0: b	
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+0: a	
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+0: b	
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+0: a	
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+0: b	
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+0: a	
+
+EXPR:
+(Eq false
+     (Slt (ReadLSB w32 0 b)
+          0))
+
+0: b	
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+0: a	
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+0: b	
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+0: a	
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+0: b	
+
+EXPR:
+(Slt 0
+      (ReadLSB w32 0 a))
+
+0: a	
+
+EXPR:
+(Slt (ReadLSB w32 0 b)
+      0)
+
+0: b	
+

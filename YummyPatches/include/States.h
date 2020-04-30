@@ -10,6 +10,7 @@
 #include "klee/Expr/Constraints.h"
 // yummy
 #include "Guards.h"
+#include "Composition.h"
 
 
 namespace yummy
